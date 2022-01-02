@@ -1,0 +1,335 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body, html {
+   width: 100%;
+   height: 100%;
+}
+
+ header {
+   
+    width: 100%;
+    display: flex;
+    align-items: center;
+   justify-content: space-between; 
+
+ }
+
+ header img {
+    width: 100%;
+    max-width: 300px;
+ }
+
+ ul {
+   width: 100%;
+
+   display: flex;
+   
+   text-transform: uppercase;
+   background: red;
+   border-radius: 10px;
+   font-size: 15px;
+   list-style: none;
+ }
+
+ ul li {
+   padding: 32px;
+  
+ }
+
+ .presentation {
+    height: 400px;
+    width: 100%;
+
+    background-image: url('../images/cafes-do-brasil-club.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(136, 201, 39);
+ }
+
+ .box-slogan {
+   width: 300px;
+ 
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    
+   text-transform: uppercase;
+   border-radius: 20px;
+   background-color: chocolate;
+ }
+
+ .box-slogan .emphasis {
+   font-size: 40px;
+ }
+
+ .box-slogan p {
+   font-size: 30px;
+ }
+
+.content-plans {
+   height: 700px;
+
+   position: relative;
+   
+   
+}
+
+.background-cafe {
+  width: 100%;
+   
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.background-cafe img {
+   width: 150px;
+   
+}
+
+.box-plans {
+   height: 100%;
+   
+   position: relative;
+  
+   margin: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   justify-content: center;
+}
+
+.box-plans h2 {
+   font-size: 32px;
+   text-transform: uppercase;
+   
+}
+
+.content-plans::before {
+   content: '';
+   height: 700px;
+   width: 10%;
+   background-image: url('../images/cafes-esquerda.png');
+   background-size: contain;
+   background-position: center center;
+   background-repeat: no-repeat;
+   position: absolute;
+   left: 0;
+   z-index: -1;
+}
+
+.box-plans p {
+   max-width: 980px;
+   width: 100%;
+
+   margin-top: 32px;
+   font-size: 23px;
+   text-align: center;
+
+
+}
+
+.box-plans button {
+
+   margin-top: 45px;
+   padding: 14px 32px;
+   font-size: 16px;
+   color: #fff;
+   text-transform: uppercase;
+   border-radius: 20px;
+   background-color: red;
+   border: none;
+}
+
+.box-plans button:hover {
+   cursor: pointer;
+}
+
+.content-plans::after {
+   content: '';
+   height: 700px;
+   width: 10%;
+   background-image: url('../images/cafe-direita.png');
+   background-size: contain;
+   background-position: center center;
+   background-repeat: no-repeat;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   z-index: -1;
+}
+
+.content-farms {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.box-about-farms {
+   background-color: #660000;
+
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: #e0d3be;
+   
+}
+
+.box-about-farms h2 {
+   width: 100%;
+   max-width: 300px;
+   display: inline-block;
+   font-size: 35px;
+   font-weight: 500;
+  
+   margin: 70px 0px 32px 0px;
+   
+}
+
+.box-about-farms p {
+   width: 100%;
+   max-width: 350px;
+   font-size: 20px;
+   font-weight: 300;
+   text-align: center;
+
+   margin: 32px 0px;
+}
+
+.box-about-farms button {
+   padding: 10px 16px;
+   margin: 16px;
+   border-radius: 20px;
+   border: none;
+   text-transform: uppercase;
+   color: #660000;
+}
+
+.step-by-step {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 40px  32px 48px 32px;
+   filter: brightness(150%) contrast(100%) saturate(100%) blur(0) hue-rotate(37deg);
+}
+
+.step-by-step div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-by-step div p {
+ 
+   margin: 32px;
+}
+
+.content-operation{
+   text-align: center;
+}
+
+.content-operation > h2 {
+   font-size: 32px;
+   font-weight: 500;
+
+   margin-top: 80px;
+   text-transform: uppercase;
+}
+
+.content-operation > p {
+   font-size: 20px;
+   color: #7a7a7a;
+   text-transform: uppercase;
+   
+
+   margin-top: 32px;
+}
+
+
+
+.box-operation {
+   width: 100%;
+
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 50px;
+}
+
+.standard {
+   width: 100%;
+   max-width: 250px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   margin: 25px;
+   background: chartreuse;
+
+}
+
+.standard img {
+   width: 100px;
+}
+
+.standard h3 {
+
+   font-size: 25px;
+   font-size: 700;
+
+   text-transform: uppercase;
+}
+
+.standard p {
+   width: 100%;
+   max-width: 230px;
+
+
+   margin-top: 16px;
+  
+   font-size: 20px;
+   opacity: 0.7;
+}
+
+.our-story {
+
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   background: chartreuse;
+}
+
+.our-story img {
+   width: 500px;
+
+}
+
+.box-story {
+   width: 50%;
+
+   text-align: left;
+
+   margin-left: 70px;
+   
+}
+
+.box-story h3{
+   max-width: 500px;
+
+   font-size: 40px;
+}
