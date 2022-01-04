@@ -279,7 +279,7 @@ body, html {
    align-items: center;
 
    margin: 25px;
-   background: chartreuse;
+
 
 }
 
@@ -310,26 +310,52 @@ body, html {
 
    display: flex;
    justify-content: center;
-   flex-wrap: wrap;
+
+  
+   margin-top: 150px;
+
    background: chartreuse;
 }
 
 .our-story img {
-   width: 500px;
+   width: 100%;
+   max-width: 900px;
+
+   
+
+
+   margin: 0px 10px:
 
 }
 
 .box-story {
-   width: 50%;
+   width: 100%;
+   max-width: 800px;
+
+   max-height: 400px;
 
    text-align: left;
 
    margin-left: 70px;
+}
+
+.box-story p {
+   width: 100%;
+   max-width: 750px;
+
+   font-size: 20px;
+
+
    
 }
 
 .box-story h3{
-   max-width: 500px;
+   width: 100%;
+   max-width: 700px;
+   
+   text-align: left;
+   padding-top: 32px;
+   line-height: 60px;
 
    font-size: 40px;
 }
