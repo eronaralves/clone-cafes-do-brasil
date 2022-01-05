@@ -239,6 +239,8 @@ body, html {
 }
 
 .content-operation{
+
+
    text-align: center;
 }
 
@@ -306,22 +308,29 @@ body, html {
    opacity: 0.7;
 }
 
+.content-story {
+   display: flex;
+   justify-content: center;
+}
+
 .our-story {
+   width: 100%;
 
    display: flex;
    justify-content: center;
 
   
    margin-top: 150px;
+   padding: 0px 16px;
 
-   background: chartreuse;
+   margin-bottom: 32px;
 }
 
 .our-story img {
    width: 100%;
    max-width: 900px;
 
-   
+   height: 400px;
 
 
    margin: 0px 10px:
@@ -330,9 +339,9 @@ body, html {
 
 .box-story {
    width: 100%;
-   max-width: 800px;
+   max-width: 900px;
 
-   max-height: 400px;
+   
 
    text-align: left;
 
@@ -345,17 +354,150 @@ body, html {
 
    font-size: 20px;
 
-
-   
+   margin: 40px 0px 16px 0px;  
 }
 
-.box-story h3{
+.box-story h3 {
    width: 100%;
    max-width: 700px;
    
+   margin-top: 68px;
+   
    text-align: left;
-   padding-top: 32px;
-   line-height: 60px;
+   line-height: 70px;
 
-   font-size: 40px;
+   font-size: 50px;
 }
+
+.box-story button {
+   padding: 12px 18px;
+   border-radius: 20px;
+   border: none;
+
+   background-image: linear-gradient(to top, #fff, #E0D3BE);
+}
+
+.box-story button a {
+   text-transform: uppercase;
+   text-decoration: none;
+
+   color: #000;
+
+   font-size: 13px;
+}
+
+hr {
+   width: 5%;
+
+   margin: 0 auto;
+   background-color: #fd583f;
+
+   
+}
+
+.content-blog {
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   text-align:center;
+   
+}
+
+.content-blog h2 {
+   font-size: 32px;
+
+   margin: 32px 0px 20px 0px;
+}
+
+.content-blog p {
+   max-width: 300px;
+   
+}
+
+.boxs-blog {
+   display: flex;
+   justify-content: center;
+
+   border-radius: 10px;
+}
+
+
+.box-standard {
+   width: 100%;
+   max-width: 350px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   
+   margin: 32px 16px;
+
+   background: red;
+   
+}
+
+.box-standard h3 {
+   
+
+   text-align: left;
+   width: 100%;
+   padding: 0px 32px;
+   background: blue;
+   font-size: 22px;
+}
+
+.box-standard p {
+   width: 100%;   
+
+   background: aqua;
+
+   text-align: left;
+}
+
+.box-standard img {
+   width: 100%;
+   height: 200px;
+
+}
+
+.box-cup-of-coffee {
+   width: 100%;
+   height: 220px;
+   
+   background-image: url("../images/cup-of-coffee.jpg");
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   
+}
+
+.box-coffee-beans {
+   width: 100%;
+   height: 220px;
+
+
+   background-image: url("../images/coffee-beans.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+} 
+
+.box-robot-serves {
+   width: 100%;
+   height: 220px;
+
+
+   background-image: url("../images/robot-serves.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+
+
+
+
+
