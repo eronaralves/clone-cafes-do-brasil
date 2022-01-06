@@ -590,62 +590,54 @@ body, html {
 }
 
 footer {
-   width: 100%;
-   height: 500px; 
-
-   margin-top: 32px;
-   padding: 10px;
-
-   color: #fff;
-   background-color: #652d2d; 
-
-   text-align: center;
-}
-
-
-.box-see-plus a {
-   font-weight: 400;
-
-   text-decoration: none;
-
+   background-color: #652d2d;
 }
 
 .content-farms-moth {
+   
    display: flex;
    justify-content: center;
 
-   margin: 32px 32px;
-
+   color: #fff;
    background: red;
 }
 
-.content-farms-moth {
-   position: relative;
-}
-
-.content-farms-moth .left-image {
-   width: 10%;
-
-}
-
-.content-farms-moth .right-image {
-   width: 12%;
-}
-
-.box-farms-month {
+.content-farms-moth .box-farms {
    text-align: center;
 
-   margin: 0px 100px;
 }
 
-.box-farms-month h3 {
-   font-size: 25px;
-   margin: 90px;
+.box-farms .farms-moth {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.box-farms .farms-moth h3 {
+   font-size: 20px;
+   font-weight: 300;
+   text-transform: uppercase;
+
+   margin: 100px 0px 35px 0px;
+} 
+
+.box-farms .farms-moth p {
+   width: 100%;
+   max-width: 250px;
+
+   font-size: 18px;
+
+   margin-bottom: 35px;
+
+}
+
+.box-farms .farms-moth button {
+   padding: 5px 5px;
+   border-radius: 40px;
+   border: none;
+
    text-transform: uppercase;
 }
-
-
-
 
 
 
