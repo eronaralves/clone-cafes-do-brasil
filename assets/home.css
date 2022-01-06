@@ -370,11 +370,18 @@ body, html {
 }
 
 .box-story button {
-   padding: 12px 18px;
+   padding: 12px 20px;
    border-radius: 20px;
    border: none;
 
+   margin: 32px 0px 64px 0px;
+
    background-image: linear-gradient(to top, #fff, #E0D3BE);
+
+}
+
+.box-story button a:hover {
+   color: #fff; 
 }
 
 .box-story button a {
@@ -386,8 +393,10 @@ body, html {
    font-size: 13px;
 }
 
-hr {
-   width: 5%;
+.separation {
+   width: 70px;
+   height: 2px;
+   border: none;
 
    margin: 0 auto;
    background-color: #fd583f;
@@ -403,6 +412,7 @@ hr {
 
    text-align:center;
    
+   position: relative;
 }
 
 .content-blog h2 {
@@ -426,35 +436,43 @@ hr {
 
 .box-standard {
    width: 100%;
-   max-width: 350px;
+   max-width: 400px;
 
    display: flex;
    flex-direction: column;
    align-items: center;
 
-   
    margin: 32px 16px;
 
-   background: red;
+
+   box-shadow: 1px 1px 10px rgb(120, 118, 118)
    
 }
 
 .box-standard h3 {
-   
-
-   text-align: left;
    width: 100%;
-   padding: 0px 32px;
-   background: blue;
+
+   margin: 32px 0px;
+
    font-size: 22px;
 }
 
-.box-standard p {
-   width: 100%;   
+.box-standard p {  
 
-   background: aqua;
+   
+   font-size: 18px;
+
+   padding-bottom: 32px;
 
    text-align: left;
+}
+
+.box-standard a {
+   text-decoration: none;
+   margin: 0px;
+
+
+   color: #FD583F;
 }
 
 .box-standard img {
@@ -494,6 +512,136 @@ hr {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
+
+}
+
+.content-robot-serves hr {
+   margin-top: 26px;
+}
+
+.content-robot-serves {
+   position: relative; 
+}
+
+.box-texts-blog {
+
+   width: 80%;
+
+   text-align: left;
+   margin-bottom: 32px;
+}
+
+.box-standard hr {
+   width: 100%;
+}
+
+.descripition {
+   height: 45px;
+
+   padding: 10px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.descripition-robot-serves {
+   width: 100%;
+   height: 45px;
+
+
+
+   position: absolute;
+   bottom: 0;
+}
+
+.comentarios::before{
+   content: '·';
+   margin: 0px 5px;
+}
+
+.box-see-plus {
+   width: 100%;
+   height: 250px;
+
+   /* display: flex;
+   flex-direction: column;
+   justify-content: center; */
+
+   background-image: url("../images/saco-de-cafe-removebg-preview.png");
+   background-repeat: no-repeat;
+
+   /* background: red; */
+
+}
+
+.box-see-plus button {
+   padding: 15px 20px;
+   margin-top: 32px;
+
+   text-transform: uppercase;
+
+   border: none;
+   border-radius: 40px;
+
+
+   background-image: linear-gradient( to bottom, #25EFFF, #1AB3BF);
+
+}
+
+footer {
+   width: 100%;
+   height: 500px; 
+
+   margin-top: 32px;
+   padding: 10px;
+
+   color: #fff;
+   background-color: #652d2d; 
+
+   text-align: center;
+}
+
+
+.box-see-plus a {
+   font-weight: 400;
+
+   text-decoration: none;
+
+}
+
+.content-farms-moth {
+   display: flex;
+   justify-content: center;
+
+   margin: 32px 32px;
+
+   background: red;
+}
+
+.content-farms-moth {
+   position: relative;
+}
+
+.content-farms-moth .left-image {
+   width: 10%;
+
+}
+
+.content-farms-moth .right-image {
+   width: 12%;
+}
+
+.box-farms-month {
+   text-align: center;
+
+   margin: 0px 100px;
+}
+
+.box-farms-month h3 {
+   font-size: 25px;
+   margin: 90px;
+   text-transform: uppercase;
 }
 
 
