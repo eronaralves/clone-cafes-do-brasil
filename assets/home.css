@@ -350,14 +350,15 @@ body, html {
 
   
    margin-top: 150px;
-   padding: 0px 16px;
+
 
    margin-bottom: 32px;
+
 }
 
 .our-story .box-story-img {
    width: 100%;
-   max-width: 800px;
+   max-width: 900px;
 
 
 
@@ -751,11 +752,57 @@ footer {
 }
 
 
-@media (max-width: 1320px) {
+@media (max-width: 1310px) {
 
    .our-story {
+      
+
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+
    }
 
+
+   .box-story {
+      max-width: 900px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 0;
+      padding: 0px 15px;
+
+      text-aling: center;
+ 
+   }
+   
+   .box-story h3 {
+      
+      text-align: center;
+      font-size: 50px;
+
+   
+   }
+
+   .box-story p {
+      text-align: center;
+   }
+}
+
+@media (max-width: 730px) {
+   /* .box-story h3 {
+      font-size: 50px;
+   } */
+}
+
+@media (max-width:530px) {
+   .box-story h3 {
+      font-size: 30px;
+   }
+
+   .box-standard {
+      width: 80%;
+   }
 }
