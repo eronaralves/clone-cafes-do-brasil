@@ -9,9 +9,17 @@
 </head>
 <body>
     <header>
-       
-        <img src="./images/logo-cafes-do-brasil.jpeg" alt="">
-        <!-- <nav>
+        <div class="box-logo">
+            <img src="./images/logo-cafes-do-brasil.jpeg" alt="">
+        </div>
+
+        <div class="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+
             <ul>
                 <li>o clube</li>
                 <li>fazendas</li>
@@ -21,17 +29,14 @@
                 <li>loja</li>
                 <li>minha conta</li>
             </ul>
-        </nav> -->
+        </nav>
     </header>
     <main>
         <section class="presentation">
-            <!-- <img src="./images/logo-coffee-shop.png" alt="">
-            <div class="box-slogan">
-                <p>Ta na duvida?</p>
-                <p class="emphasis">Presenteie</p>
-                <p>*com cafe*</p>
-            </div> -->
-
+            <picture>
+                <source media="(max-width: 900px)" srcset="./images/cafes-do-brasil-club-mobile.jpeg">
+                <img src="./images/cafes-do-brasil-club.jpg" alt="">
+            </picture>
         </section>
             
         <section class="content-plans">
@@ -103,7 +108,9 @@
                 </div>
             </div>
             <div class="our-story"> 
-                <img src="./images/cafes-do-brasil-embalagem.png" alt="">    
+                <div class="box-story-img">
+                    <img src="./images/cafes-do-brasil-embalagem.png" alt="">    
+                </div>
                 <div class="box-story">
                     <h3>Quase 30 anos de história desse <strong>CAFÉ ESPECIAL</strong> colhido a +/- 1.300m de altitude</h3>
                     <p>O destino uniu dois produtores que tinham um sonho em comum: ter sua própria fazenda para cultivar seu café. Hoje, sogro e genro dividem essa tarefa na FAZENDA ALTO DA SERRA.</p>
@@ -170,7 +177,7 @@
     </main>
     <footer>
         <div class="content-farms-moth">
-            <div>
+            <div class="img-box-farms image-left">
                 <img class="left-image" src="./images/Logo-signature-150.png" alt="">
             </div>
             <div class="box-farms">
@@ -179,18 +186,18 @@
                     <p>Fazendas selecionadas a dedo abastecem nosso estoque com o que há de melhor no universo dos cafés especiais!
                     </p>
                     <button>
-                        Conhecer as fazendas
+                        <a href="">Conhecer as fazendas</a>    
                     </button>
                 </div>
-                <div>
+                <div class="contact">
                     <p>Duvidas? Fale conoscp!</p>
                     <p> <a href="">contato@cafesdobrasilclub.com.br</a></p>
                     <p>Rodovia BR-49 Varginha - Três Corações Km 255, Penedo CEP: 37.066-800</p>
                     <p>CNPJ: 26.272.109/0001-71 | I.E.: 002839692.00-95</p>
                 </div>
             </div>
-            <div>
-                <img class="right-image" src="./images/cafes-do-brasil-assinatura-plano-300x249.png" alt="">
+            <div class="img-box-farms image-right" >
+                <img src="./images/cafes-do-brasil-assinatura-plano-300x249.png" alt="">
             <div>
         </div>
     </footer>

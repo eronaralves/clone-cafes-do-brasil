@@ -16,44 +16,73 @@ body, html {
     align-items: center;
    justify-content: space-between; 
 
+   position: relative;
+
  }
 
- header img {
-    width: 100%;
-    max-width: 300px;
+.box-logo {
+   width: 60%;
+   max-width: 300px;
+
+}
+
+.box-logo img{
+   width: 100%;
+}
+
+ .mobile-menu {
+   display: none;
+   cursor: pointer;
+
+   margin-right: 32px;
+
+
  }
+
+.mobile-menu div {
+   width: 32px;
+   height: 2px;
+
+   margin: 8px;
+
+   background: #000;
+}
+
 
  ul {
    width: 100%;
-
+   max-width: 1000px;
    display: flex;
    
    text-transform: uppercase;
    background: red;
    border-radius: 10px;
-   font-size: 15px;
+
    list-style: none;
  }
 
  ul li {
    padding: 32px;
+   font-size: 15px;
+   width: 50%;
   
  }
 
  .presentation {
-    height: 400px;
-    width: 100%;
-
-    background-image: url('../images/cafes-do-brasil-club.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-
+   width: 100%;
+   
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(136, 201, 39);
+
+ }
+
+ .presentation picture {
+    width: 100%;
+ }
+
+ .presentation picture img {
+    width: 100%;
  }
 
  .box-slogan {
@@ -326,15 +355,17 @@ body, html {
    margin-bottom: 32px;
 }
 
-.our-story img {
+.our-story .box-story-img {
    width: 100%;
-   max-width: 900px;
+   max-width: 800px;
 
-   height: 400px;
 
 
    margin: 0px 10px:
 
+}
+.our-story .box-story-img img {
+   width: 100%;
 }
 
 .box-story {
@@ -427,9 +458,11 @@ body, html {
 }
 
 .boxs-blog {
+   width: 100%;
+
    display: flex;
    justify-content: center;
-
+   flex-wrap: wrap;
    border-radius: 10px;
 }
 
@@ -589,21 +622,33 @@ body, html {
 
 }
 
+.box-see-plus a {
+   text-decoration: none;
+}
+
 footer {
+   width: 100%;
+
+   margin-top: 32px;
+   padding: 10px;
+
    background-color: #652d2d;
 }
 
 .content-farms-moth {
-   
+   width: 100%;
+
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
 
    color: #fff;
-   background: red;
+
 }
 
 .content-farms-moth .box-farms {
    text-align: center;
+   margin: 0px 64px;
 
 }
 
@@ -629,15 +674,88 @@ footer {
 
    margin-bottom: 35px;
 
+   opacity: .6;
+
 }
 
 .box-farms .farms-moth button {
-   padding: 5px 5px;
+   padding: 8px 8px;
    border-radius: 40px;
    border: none;
 
    text-transform: uppercase;
 }
 
+.box-farms .farms-moth a {
+   text-decoration: none;
+
+   font-size: 12px;
+   color: #652d2d;
+}
 
 
+
+.image-left {
+   width: 100%;
+   max-width: 120px;
+
+   margin-top: 64px;
+
+
+}
+
+.image-left img {
+   width: 100%;
+}
+
+.image-right {
+   width: 100%;
+   max-width: 150px;
+
+   margin-top: 64px;
+
+}
+
+.image-right img {
+   width: 100%;
+}
+
+.contact {
+   margin-top: 32px;
+
+   font-size: 15px;
+}
+
+.contact p:nth-child(1) {
+   opacity: .5;
+}
+
+.contact p {
+   margin: 5px 0px;
+}
+
+.contact a {
+   color: #fff;
+   text-decoration: none;
+   margin-top: 5px;
+}
+
+@media (max-width: 1250px) {
+   nav {
+      display: none;
+   }
+
+   .mobile-menu {
+      display: block;
+   }
+}
+
+
+@media (max-width: 1320px) {
+
+   .our-story {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+}
