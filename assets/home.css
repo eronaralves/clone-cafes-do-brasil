@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
  }
 
 body, html {
@@ -56,95 +57,54 @@ body, html {
    align-items: center;
    
    text-transform: uppercase;
-   background: red;
+
    border-radius: 10px;
+
+   margin: 0px 16px; 
 
    list-style: none;
  }
 
  ul li {
    padding: 32px;
-   font-size: 15px;
-   width: 50%;
+   font-size: 13px;
+
   
+  
+ }
+
+ ul li:hover {
+    color: #fd583f;
+    cursor: pointer;
  }
 
  .presentation {
    width: 100%;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
  }
 
  .presentation picture {
     width: 100%;
+    height: 100%;
+    background: blue;
  }
 
  .presentation picture img {
     width: 100%;
- }
-
- .box-slogan {
-   width: 300px;
- 
-
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-    
-   text-transform: uppercase;
-   border-radius: 20px;
-   background-color: chocolate;
- }
-
- .box-slogan .emphasis {
-   font-size: 40px;
- }
-
- .box-slogan p {
-   font-size: 30px;
+    height: 100%;
  }
 
 .content-plans {
+
    height: 700px;
-
    position: relative;
-   
-   
-}
 
-.background-cafe {
-  width: 100%;
-   
-   position: absolute;
-   display: flex;
-   justify-content: space-between;
-   
-}
 
-.background-cafe img {
-   width: 150px;
    
-}
-
-.box-plans {
-   height: 100%;
-   
-   position: relative;
-  
-   margin: 40px;
-   display: flex;
-   flex-direction: column;
-   align-items: center; 
-   justify-content: center;
-}
-
-.box-plans h2 {
-   font-size: 32px;
-   text-transform: uppercase;
    
 }
 
@@ -161,13 +121,57 @@ body, html {
    z-index: -1;
 }
 
-.box-plans p {
+
+.content-plans::after {
+   content: '';
+   height: 700px;
+   width: 10%;
+   background-image: url('../images/cafe-direita.png');
+   background-size: contain;
+   background-position: center center;
+   background-repeat: no-repeat;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   z-index: -1;
+}
+
+
+
+.box-plans {
+   height: 100%;
+   
+   position: relative;
+  
+   margin: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   justify-content: center;
+
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+}
+
+.box-plans h2 {
+   font-size: 32px;
+   font-family: 'Montserrat', sans-serif;
+
+   text-transform: uppercase;
+   
+}
+
+.box-plans p { 
+
    max-width: 980px;
    width: 100%;
 
    margin-top: 32px;
    font-size: 23px;
    text-align: center;
+
+   font-size: 17px;
+   font-weight: 400;
 
 
 }
@@ -188,19 +192,6 @@ body, html {
    cursor: pointer;
 }
 
-.content-plans::after {
-   content: '';
-   height: 700px;
-   width: 10%;
-   background-image: url('../images/cafe-direita.png');
-   background-size: contain;
-   background-position: center center;
-   background-repeat: no-repeat;
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   z-index: -1;
-}
 
 .content-farms {
    display: flex;
@@ -221,10 +212,14 @@ body, html {
 
 .box-about-farms h2 {
    width: 100%;
-   max-width: 300px;
+   max-width: 400px;
    display: inline-block;
+
+   font-family: 'Special Elite', cursive;
    font-size: 35px;
    font-weight: 500;
+   
+   line-height: 60px; 
   
    margin: 70px 0px 32px 0px;
    
@@ -235,7 +230,8 @@ body, html {
    max-width: 350px;
    font-size: 20px;
    font-weight: 300;
-   text-align: center;
+  
+   
 
    margin: 32px 0px;
 }
@@ -269,23 +265,26 @@ body, html {
 }
 
 .content-operation{
-
-
    text-align: center;
 }
 
 .content-operation > h2 {
-   font-size: 32px;
+   font-size: 38px;
    font-weight: 500;
+   font-family: "Special Elite",Sans-serif;
 
    margin-top: 80px;
    text-transform: uppercase;
 }
 
 .content-operation > p {
-   font-size: 20px;
    color: #7a7a7a;
+   opacity: .7;
    text-transform: uppercase;
+
+   font-size: 23px;
+   font-family: "Special Elite",Sans-serif;
+   font-weight: 400;
    
 
    margin-top: 32px;
@@ -304,12 +303,13 @@ body, html {
 
 .standard {
    width: 100%;
-   max-width: 250px;
+   max-width: 280px;
 
    display: flex;
    flex-direction: column;
    align-items: center;
 
+   padding: 0px 16px;
    margin: 25px;
 
 
@@ -320,7 +320,7 @@ body, html {
 }
 
 .standard h3 {
-
+   font-family: "Special Elite",Sans-serif;
    font-size: 25px;
    font-size: 700;
 
@@ -329,12 +329,12 @@ body, html {
 
 .standard p {
    width: 100%;
-   max-width: 230px;
+   max-width: 250px; 
 
 
    margin-top: 16px;
   
-   font-size: 20px;
+   font-size: 18px;
    opacity: 0.7;
 }
 
@@ -387,19 +387,24 @@ body, html {
 
    font-size: 20px;
 
+   color: #7a7a7a; 
+
    margin: 40px 0px 16px 0px;  
 }
 
 .box-story h3 {
    width: 100%;
-   max-width: 700px;
+   max-width: 900px;
    
    margin-top: 68px;
    
    text-align: left;
    line-height: 70px;
 
-   font-size: 50px;
+   font-size: 42px;
+   font-family: "Special Elite",Sans-serif;
+   font-weight: 400;
+   
 }
 
 .box-story button {
@@ -450,12 +455,24 @@ body, html {
 
 .content-blog h2 {
    font-size: 32px;
+   font-family: "Special Elite",Sans-serif;
+ 
 
    margin: 32px 0px 20px 0px;
 }
 
 .content-blog p {
-   max-width: 300px;
+   width: 100%;
+   max-width: 500px;
+
+   line-height: 25px;
+
+   
+   font-style: italic; 
+   font-size: 18px;
+
+   opacity: .7;
+
    
 }
 
@@ -487,9 +504,12 @@ body, html {
 .box-standard h3 {
    width: 100%;
 
+   color: #652d2d;
+
    margin: 32px 0px;
 
    font-size: 22px;
+   
 }
 
 .box-standard p {  
@@ -626,6 +646,10 @@ body, html {
 
 .box-see-plus a {
    text-decoration: none;
+}
+
+.box-see-plus button a:hover {
+   color: #fff; 
 }
 
 footer {
@@ -775,14 +799,14 @@ footer {
       margin: 0;
       padding: 0px 15px;
 
-      text-aling: center;
+     text-align: center;
  
    }
    
    .box-story h3 {
       
       text-align: center;
-      font-size: 50px;
+      font-size: 45px;
 
    
    }
@@ -792,10 +816,10 @@ footer {
    }
 }
 
-@media (max-width: 730px) {
-   /* .box-story h3 {
-      font-size: 50px;
-   } */
+@media (max-width: 900px) {
+   .box-story h3 {
+      font-size: 40px; 
+   }
 }
 
 @media (max-width:530px) {
@@ -806,4 +830,18 @@ footer {
    .box-standard {
       width: 80%;
    }
+
+   .content-plans {
+      height: 400px;
+   }
+
+   .our-story {
+      margin: 35px 0px;
+
+   }
+
+   .box-standard p {
+      font-size: 15px;
+   }
+
 }
